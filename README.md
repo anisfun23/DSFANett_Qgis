@@ -2,6 +2,7 @@
 **1. [Setup Awal (Hanya Sekali)](#-setup-awal-hanya-sekali)**
 **2. [Tambahkan Script ke QGIS](#-tambahkan-script-ke-qgis)**
 **3. [Jalankan Tool](#-jalankan-tool)**
+**4. [Parameter GUI](#-Parameter-GUI)**
 
 
 **1. Setup Awal**
@@ -13,7 +14,6 @@ Langkah ini diperlukan untuk mempersiapkan *environment* Python dan semua depend
 ```bash
 python install_env.py
 ```
-
 
 **2. Tambahkan Script ke QGIS**
 1. Buka QGIS.
@@ -28,4 +28,18 @@ python install_env.py
 ```bash
 tf_dsfa
 ```
-di komputer anda (baik di folder user maupun ProgramData) dan langsung menggunakannya.
+di komputer anda (baik di folder user maupun ProgramData) dan langsung menggunakann 
+
+
+**4. Parameter GUI:**
+Parameter yang akan digunakan di QGIS adalah sebagai berikut
+- INPUT_T1: Layer Raster Citra T1 (Sebelum)
+- INPUT_T2: Layer Raster Citra T2 (Sesudah)
+- UNCHANGED_MASK: Layer Raster Mask Unchanged (Opsional, jika kosong akan dihitung otomatis via CVA)
+- EPOCHS: Jumlah iterasi training model (default: 2000)
+- LEARNING_RATE: Learning rate optimizer (default: 1e-4)
+- REGULARIZATION: Parameter regularisasi (default: 1e-4)
+- TRAINING_SAMPLES: Jumlah piksel sampel training (default: 3000)
+- ITERATIONS: Jumlah iterasi DSFA (default: 10)
+- EXTERNAL_PYTHON: Path ke python.exe eksternal yang terinstal TensorFlow (Opsional)
+- OUTPUT: Layer raster baru untuk menyimpan hasil Peta Perubahan (Change Map) dan Magnitude Perubahan (Magnitude Map).
