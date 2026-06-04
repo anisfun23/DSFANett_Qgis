@@ -316,14 +316,36 @@ class DSFANetProcessingAlgorithm(QgsProcessingAlgorithm):
 
         if not run_externally and not HAS_INTERNAL_DEPS:
             feedback.pushInfo(
-                "Dependency TensorFlow tidak ditemukan di environment QGIS."
+                "Dependency TensorFlow tidak ditemukan di environment internal QGIS."
             )
-            feedback.pushInfo("Mencari path Python eksternal otomatis...")
-            # Try to check if python is in path
-            raise QgsProcessingException(
-                "TensorFlow tidak terinstal di environment QGIS. Silakan tentukan 'Path Python Executable Eksternal' "
-                "yang terinstal TensorFlow 1.x (misalnya: C:\\Users\\NamaUser\\anaconda3\\envs\\tf_env\\python.exe)."
-            )
+            feedback.pushInfo("Mencari environment Python eksternal 'tf_dsfa' secara otomatis...")
+            
+            user_home = os.path.expanduser("~")
+            conda_env_paths = [
+                os.path.join(user_home, "miniconda3", "envs", "tf_dsfa", "python.exe"),
+                os.path.join(user_home, "anaconda3", "envs", "tf_dsfa", "python.exe"),
+                "C:\\ProgramData\\miniconda3\\envs\\tf_dsfa\\python.exe",
+                "C:\\ProgramData\\anaconda3\\envs\\tf_dsfa\\python.exe",
+                os.path.join(user_home, "AppData", "Local", "miniconda3", "envs", "tf_dsfa", "python.exe"),
+                os.path.join(user_home, "AppData", "Local", "anaconda3", "envs", "tf_dsfa", "python.exe"),
+            ]
+            
+            auto_python_path = None
+            for p_path in conda_env_paths:
+                if os.path.exists(p_path):
+                    auto_python_path = p_path
+                    break
+                    
+            if auto_python_path:
+                feedback.pushInfo(f"Ditemukan environment eksternal otomatis di: {auto_python_path}")
+                external_python = auto_python_path
+                run_externally = True
+            else:
+                raise QgsProcessingException(
+                    "TensorFlow tidak terinstal di QGIS dan environment otomatis 'tf_dsfa' tidak ditemukan.\n"
+                    "Silakan jalankan script installer 'install_env.py' di folder repositori terlebih dahulu,\n"
+                    "atau tentukan parameter 'Path Python Executable Eksternal' secara manual."
+                )
 
         all_magnitude = None
         change_map = None
