@@ -43,3 +43,17 @@ Parameter yang akan digunakan di QGIS adalah sebagai berikut
 - ITERATIONS: Jumlah iterasi DSFA (default: 10)
 - EXTERNAL_PYTHON: Path ke python.exe eksternal yang terinstal TensorFlow (Opsional)
 - OUTPUT: Layer raster baru untuk menyimpan hasil Peta Perubahan (Change Map) dan Magnitude Perubahan (Magnitude Map).
+
+
+## KELOMPOK 2
+- **Irfani Anis** 25/562364/PGE/01721
+- **Adriyasyah** 25/573033/PGE/01771
+- **Salman Najib** 25/574949/PGE/01782
+- **Cipriano Pereira** 25/571768/PGE/01766
+- **Sulpisius Sihombing** 25/565756/PGE/01735
+- **Sadiqullah Stanikzai** 25/562699/PGE/01729
+
+## Reference
+```bash
+https://github.com/wwdAlger/DSFANet.git
+```
