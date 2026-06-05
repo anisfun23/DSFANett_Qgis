@@ -1,4 +1,4 @@
-## 📑 how to use
+<img width="870" height="818" alt="image" src="https://github.com/user-attachments/assets/5ebc14f3-1cb5-4dd3-80fb-69b7d3cf7277" />## 📑 how to use
 **1. [Setup Awal (Hanya Sekali)](#-setup-awal-hanya-sekali)**
 **2. [Tambahkan Script ke QGIS](#-tambahkan-script-ke-qgis)**
 **3. [Jalankan Tool](#-jalankan-tool)**
@@ -42,7 +42,10 @@ Parameter yang akan digunakan di QGIS adalah sebagai berikut
 - TRAINING_SAMPLES: Jumlah piksel sampel training (default: 3000)
 - ITERATIONS: Jumlah iterasi DSFA (default: 10)
 - EXTERNAL_PYTHON: Path ke python.exe eksternal yang terinstal TensorFlow (Opsional)
+- Path Folder Repository DSFANet: Sesuaikan dengan folder penyimpanan anda/Adjust the saved folder DSFANett 
 - OUTPUT: Layer raster baru untuk menyimpan hasil Peta Perubahan (Change Map) dan Magnitude Perubahan (Magnitude Map).
+
+<img width="870" height="818" alt="image" src="https://github.com/user-attachments/assets/1e8608c1-771e-4c6d-93b9-e4e2fe5bf84e" />
 
 
 ## KELOMPOK 2
