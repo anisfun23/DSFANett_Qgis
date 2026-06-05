@@ -44,8 +44,9 @@ Parameter yang akan digunakan di QGIS adalah sebagai berikut
 - EXTERNAL_PYTHON: Path ke python.exe eksternal yang terinstal TensorFlow (Opsional)
 - Path Folder Repository DSFANet: Sesuaikan dengan folder penyimpanan anda/Adjust the saved folder DSFANett 
 - OUTPUT: Layer raster baru untuk menyimpan hasil Peta Perubahan (Change Map) dan Magnitude Perubahan (Magnitude Map).
+- <img width="870" height="818" alt="image" src="https://github.com/user-attachments/assets/1e8608c1-771e-4c6d-93b9-e4e2fe5bf84e" />
 
-<img width="870" height="818" alt="image" src="https://github.com/user-attachments/assets/1e8608c1-771e-4c6d-93b9-e4e2fe5bf84e" />
+
 
 
 ## KELOMPOK 2
