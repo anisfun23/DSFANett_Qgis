@@ -57,3 +57,4 @@ Parameter yang akan digunakan di QGIS adalah sebagai berikut
 ```bash
 https://github.com/wwdAlger/DSFANet.git
 ```
+<img width="1046" height="560" alt="image" src="https://github.com/user-attachments/assets/6a5477a4-e79b-401d-a1ba-009c4a5ca6ef" />
