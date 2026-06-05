@@ -62,3 +62,12 @@ Parameter yang akan digunakan di QGIS adalah sebagai berikut
 https://github.com/wwdAlger/DSFANet.git
 ```
 <img width="1046" height="560" alt="image" src="https://github.com/user-attachments/assets/6a5477a4-e79b-401d-a1ba-009c4a5ca6ef" />
+
+## Hasil
+From this
+<img width="996" height="671" alt="image" src="https://github.com/user-attachments/assets/e46e791c-51cc-4bbf-90a1-bc88b971f44a" />
+<img width="997" height="674" alt="image" src="https://github.com/user-attachments/assets/72467a87-fb41-4f2b-942f-0718eb30e536" />
+to this
+<img width="993" height="659" alt="image" src="https://github.com/user-attachments/assets/8eb9c34f-3bdc-47fb-bd54-c86123870115" />
+
+
