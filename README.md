@@ -1,4 +1,4 @@
-<img width="870" height="818" alt="image" src="https://github.com/user-attachments/assets/5ebc14f3-1cb5-4dd3-80fb-69b7d3cf7277" />## 📑 how to use
+## 📑 how to use
 **1. [Setup Awal (Hanya Sekali)](#-setup-awal-hanya-sekali)**
 **2. [Tambahkan Script ke QGIS](#-tambahkan-script-ke-qgis)**
 **3. [Jalankan Tool](#-jalankan-tool)**
